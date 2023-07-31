@@ -1,6 +1,6 @@
 def call(String project, String ImageTag, String hubUser){
     sh "docker rmi ${hubUser}/${project}:${ImageTag}".trim()
-    sh "docker rmi ${hubUser}/${project} ${hubUser}/${project}:latest".trim()
+    //sh "docker rmi ${hubUser}/${project} ${hubUser}/${project}:latest".trim()
 }
 
 // def call(String project, String ImageTag, String hubUser){
